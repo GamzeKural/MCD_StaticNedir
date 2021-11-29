@@ -30,6 +30,19 @@ namespace MCD_StaticNedir
             //static  olmayan tanımlarını tamamladı.
             o1.Test1(); //Nesne örneği alındıktan sonra test1 adındaki metotuma ulaşabildim.
 
+            /*
+             * Statik kavramı gerçek hayatta nerelerde kullanılır...
+             * 
+             * 1-Helper.cs => Kontroller
+             * 2-Oluşturmuş olduğumuz nesnemizin => bağımlılığı farklı classlara olduğu
+             * için (proje içerisinde özel olduğu için) nesne içerisinde static metot
+             * tanımları yapılır.
+             * 3-Class içerisinde bir field (static) tanımı yapar ilgili field içerisine
+             * bir değer ataması yaparız.Daha sonra uygulama içerisinde N farklı yerde 
+             * oluşturmuş olduğumuz static field ımıza ulaşır değerimizi okuruz.
+             * 4-[Uygulama] => [ozelHelper] => [DLL]
+             */
+
 
             Console.ReadKey();
         }
